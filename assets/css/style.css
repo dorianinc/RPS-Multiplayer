@@ -7,6 +7,15 @@
     font-style: normal;
 }
 
+@font-face
+{
+    font-family:  'pixelmix';
+    src: url('../fonts/pixelmix.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Websites background color and width */
 body
 {
     width: 1500px;
@@ -14,6 +23,7 @@ body
     overflow-y: hidden;
 }
 
+/* Jumbotron Banner */
 .jumbotron
 {
     background-image: url("../images/gameofthrowns.png");
@@ -22,14 +32,67 @@ body
     background-color: #3f4519;
 }
 
+/* Main Content Div contains lower right image and background color */
 .mainContent
 {
-    height: 700px;
+    height: 675px;
     width: 100%;
+    margin: 0 auto;
+    text-align: center;
     background-color: #3f4519;
     background-image: url("../images/rockpaperscissors.gif");
-    background-size: 400px 375px; 
+    background-size: 325px 300px; 
     background-repeat:no-repeat;
-    background-position:right bottom;
-    
+    background-position:right bottom; 
 }
+
+.text
+{
+    font-family: 'pixelmix';
+    font-size: small;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Start of all CSS pertaining to the 3 boxes*/
+/* Width of Row CSS, Font Size and Font Family */
+.row
+{
+    width: 58%;
+    font-family: 'pixelmix';
+    font-size: x-large;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+/* Adds box sizing, border Style and aligns all boxes */
+.col-md
+{
+    float: left;
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    border-style: double;
+    border-color: #ffffff;
+    border-width: 8px;
+    box-sizing: border-box;
+
+}
+
+/* Text specific */
+#left, #right
+{
+    line-height: 1.5;
+    padding-top: 65px;
+}
+
+/*  background-image: url("../images/scissors.gif");
+background-size: 250px 225px;     */
+
+/* Text specific */
+#middle
+{
+    line-height: 1.5;
+    padding-top: 100px;
+}
+/* End of all CSS pertaining to the 3 boxes*/
