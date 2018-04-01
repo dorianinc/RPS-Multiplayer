@@ -1,0 +1,35 @@
+/* Downloaded font from DaFont.com */
+@font-face
+{
+    font-family:  'ataurus';
+    src: url('../fonts/ataurus.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    width: 1500px;
+    background-color: #3f4519;
+    overflow-y: hidden;
+}
+
+.jumbotron
+{
+    background-image: url("../images/gameofthrowns.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-color: #3f4519;
+}
+
+.mainContent
+{
+    height: 700px;
+    width: 100%;
+    background-color: #3f4519;
+    background-image: url("../images/rockpaperscissors.gif");
+    background-size: 400px 375px; 
+    background-repeat:no-repeat;
+    background-position:right bottom;
+    
+}
