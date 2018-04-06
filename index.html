@@ -1,45 +1,40 @@
 <!DOCTYPE HTML>
-<HTML Lang = 'EN-US'>
+<HTML Lang='EN-US'>
+<title>GoT</title>
 
-    <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-            <link rel = "stylesheet" href = "assets/css/reset.css">
-            <link rel = "stylesheet" href = "assets/css/style.css">
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-               
-    </head>
-    <body>
-        <div class="jumbotron">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="jumbotron">
+    </div>
+
+    <div class="mainContent">
+        <div class = "gameText">
+            
+        </div>
+        <div class="row">
+            <div class="playerInfo" id="playerOne">
+
+            </div>
+
+            <div class="results" id="winner">
+            </div>
+
+            <div class="playerInfo" id="playerTwo">
+
+            </div>
         </div>
 
-          <div class = "mainContent">
-           <p class = "text" id = "greetingPlayer">Hello Dorian! You are Player 1</p>
-           <p class = "text" id = "turn">It's your turn!</p>    
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
 
-            <div class="row">
-                <div class="col-md" id = "left">
-                <p id = "rock">Rock</p>
-                <p id = "paper">Paper</p>
-                <p id = "scissors">Scissors</p>
-                </div>
-                <div class="col-md" id = "middle">
-                Dorian Wins!!!
-                </div>
-                <div class="col-md" id = "right">
-                <p id = "rock">Rock</p>
-                <p id = "paper">Paper</p>
-                <p id = "scissors">Scissors</p>
-                </div>
-            </div>
-
-          </div>
-
-          <div class = "battlemusic">
-                <audio autoplay>
-                <source src="assets/audio/Castle_Crashers.mp3" type="audio/mp3">
-                </audio>
-            </div>
-            <script type="text/javascript" src="assets/javascript/game.js"></script>
-    </body>
 </HTML>

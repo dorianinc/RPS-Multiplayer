@@ -20,6 +20,7 @@ body
 {
     width: 1500px;
     background-color: #3f4519;
+    color: #ffffff;
     overflow-y: hidden;
 }
 
@@ -46,7 +47,14 @@ body
     background-position:right bottom; 
 }
 
-.text
+input
+{
+    padding: 5px;
+    margin: 5px;
+    color: black;
+}
+
+.gameStatus
 {
     font-family: 'pixelmix';
     font-size: small;
@@ -58,7 +66,7 @@ body
 /* Width of Row CSS, Font Size and Font Family */
 .row
 {
-    width: 58%;
+    width: 59%;
     font-family: 'pixelmix';
     font-size: x-large;
     color: #ffffff;
@@ -66,12 +74,13 @@ body
 }
 
 /* Adds box sizing, border Style and aligns all boxes */
-.col-md
+.playerInfo, .results
 {
     float: left;
     height: 250px;
     width: 250px;
     margin: 20px;
+    padding: 10px;
     border-style: double;
     border-color: #ffffff;
     border-width: 8px;
@@ -79,20 +88,9 @@ body
 
 }
 
-/* Text specific */
-#left, #right
+.playerWaiting
 {
+    font-size: medium;
     line-height: 1.5;
-    padding-top: 65px;
-}
-
-/*  background-image: url("../images/scissors.gif");
-background-size: 250px 225px;     */
-
-/* Text specific */
-#middle
-{
-    line-height: 1.5;
-    padding-top: 100px;
 }
 /* End of all CSS pertaining to the 3 boxes*/
